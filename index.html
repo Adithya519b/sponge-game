@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponge Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<header>
+    <h1>Sponge,Water,Fire</h1>
+</header>
+<main>
+    <section id="rules">
+        <h3>Fire > Sponge</h3>
+        <h3>Water > Fire</h3>
+        <h3>Sponge > Water</h3>
+    </section>
+    <section id="selection">
+        <div class="imgbox">
+ <div class="imgs" id="fire">
+    <img src="images/fire.png" >
+    <p>Fire</p>
+ </div>
+ <div class="imgs" id="water">
+<img src="images/images.jpg">
+<p>Water</p>
+</div>
+<div class="imgs" id="sponge">
+<img src="images/sponge.jpg">
+<p>Sponge</p>
+</div>
+</div>
+
+    </section>
+    <div class="btn">
+    <button id="btn" onclick="check()">check</button>
+</div>
+    <section id="result">
+        
+            <div id="computerchoice" class="resultdiv" onclick="selectfire()">
+                <img alt="Computer choice" id="computer-img">
+                <p>Computer choice</p>
+            </div>
+            <div id="yourchoice" class="resultdiv" onclick="selectwater()">
+                <img  alt="your choice" id="userchoice">
+                <p>your choice</p>
+            </div>
+        <div id="out" class="resultdiv">
+            <h3 id="score">result</h3>
+            
+    
+    </div>
+    </section>
+</main>
+</html>
